@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bakso untuk Pacar</title>
+    <style>
+        /* (Stylesheet sebelumnya tetap sama) */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Warung Bakso Sayang</h1>
+        <p>Selalu menyajikan bakso terbaik untukmu</p>
+    </header>
+
+    <section>
+        <h2>Selamat datang di Warung Bakso Sayang!</h2>
+        <p>Kami menyediakan berbagai macam bakso lezat dan nikmat untuk memanjakan lidahmu. Silakan pilih menu favoritmu dari daftar di bawah ini:</p>
+        
+        <ul>
+            <li>Bakso Sapi</li>
+            <li>Bakso Ayam</li>
+            <li>Bakso Ikan</li>
+        </ul>
+        
+        <p>Jangan ragu untuk menghubungi kami jika ada pertanyaan atau pesanan khusus. Terima kasih telah mengunjungi Warung Bakso Sayang!</p>
+    </section>
+
+    <section id="romantic-section" style="display:none;">
+        <h2>Selamat datang, Sayang!</h2>
+        <p>Saatnya kita bersantap bakso bersama-sama dan menciptakan kenangan indah.</p>
+        <p id="love-message"></p>
+    </section>
+
+    <button onclick="showRomanticMessage()">Surprise Pacar!</button>
+
+    <footer>
+        <p>&copy; 2023 Warung Bakso Sayang. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showRomanticMessage() {
+            document.getElementById('romantic-section').style.display = 'block';
+            document.getElementById('love-message').innerHTML = 'Terima kasih karena selalu ada di setiap langkahku. Aku mencintaimu, Sayang!';
+        }
+    </script>
+
+</body>
+</html>
