@@ -21,23 +21,21 @@
 
         <div id="fireworks" class="mt-8 hidden">
             <!-- Kode animasi kembang api -->
+            <script src="https://cdn.jsdelivr.net/npm/fireworks.js"></script>
+            <script>
+                document.getElementById('startButton').addEventListener('click', function () {
+                    document.getElementById('fireworks').classList.remove('hidden');
+                    startFireworks();
+                });
+
+                function startFireworks() {
+                    fireworks.start();
+                }
+            </script>
         </div>
 
         <p id="loveMessage" class="mt-8 text-lg text-pink-600 font-semibold hidden">Terima kasih karena selalu ada di setiap langkahku. Aku mencintaimu, Sayang!</p>
     </div>
-
-    <script>
-        document.getElementById('startButton').addEventListener('click', function () {
-            document.getElementById('fireworks').classList.remove('hidden');
-            document.getElementById('loveMessage').classList.remove('hidden');
-            startFireworks();
-        });
-
-        function startFireworks() {
-            // Kode animasi kembang api JavaScript dapat dimasukkan di sini
-            // Contoh sederhana: https://codepen.io/creativeocean/pen/eNJZgr
-        }
-    </script>
 
 </body>
 </html>
