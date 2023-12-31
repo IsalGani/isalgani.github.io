@@ -3,47 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Bakso untuk Pacar</title>
+    <title>Kembang Api Cinta</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <style>
-        /* (Stylesheet sebelumnya tetap sama) */
+        /* Tambahan gaya khusus jika diperlukan */
     </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <header>
-        <h1>Warung Bakso Sayang</h1>
-        <p>Selalu menyajikan bakso terbaik untukmu</p>
-    </header>
+    <div class="container mx-auto p-8 text-center">
+        <h1 class="text-4xl font-bold mb-4 text-indigo-600">Kembang Api Cinta</h1>
+        <p class="text-gray-600">Biarlah kembang api mewakili cinta kita yang membara!</p>
 
-    <section>
-        <h2>Selamat datang di Warung Bakso Sayang!</h2>
-        <p>Kami menyediakan berbagai macam bakso lezat dan nikmat untuk memanjakan lidahmu. Silakan pilih menu favoritmu dari daftar di bawah ini:</p>
-        
-        <ul>
-            <li>Bakso Sapi</li>
-            <li>Bakso Ayam</li>
-            <li>Bakso Ikan</li>
-        </ul>
-        
-        <p>Jangan ragu untuk menghubungi kami jika ada pertanyaan atau pesanan khusus. Terima kasih telah mengunjungi Warung Bakso Sayang!</p>
-    </section>
+        <div class="mt-8">
+            <button id="startButton" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full">Mulai</button>
+        </div>
 
-    <section id="romantic-section" style="display:none;">
-        <h2>Selamat datang, Sayang!</h2>
-        <p>Saatnya kita bersantap bakso bersama-sama dan menciptakan kenangan indah.</p>
-        <p id="love-message"></p>
-    </section>
+        <div id="fireworks" class="mt-8 hidden">
+            <!-- Kode animasi kembang api -->
+        </div>
 
-    <button onclick="showRomanticMessage()">Surprise Pacar!</button>
-
-    <footer>
-        <p>&copy; 2023 Warung Bakso Sayang. All rights reserved.</p>
-    </footer>
+        <p id="loveMessage" class="mt-8 text-lg text-pink-600 font-semibold hidden">Terima kasih karena selalu ada di setiap langkahku. Aku mencintaimu, Sayang!</p>
+    </div>
 
     <script>
-        function showRomanticMessage() {
-            document.getElementById('romantic-section').style.display = 'block';
-            document.getElementById('love-message').innerHTML = 'Terima kasih karena selalu ada di setiap langkahku. Aku mencintaimu, Sayang!';
+        document.getElementById('startButton').addEventListener('click', function () {
+            document.getElementById('fireworks').classList.remove('hidden');
+            document.getElementById('loveMessage').classList.remove('hidden');
+            startFireworks();
+        });
+
+        function startFireworks() {
+            // Kode animasi kembang api JavaScript dapat dimasukkan di sini
+            // Contoh sederhana: https://codepen.io/creativeocean/pen/eNJZgr
         }
     </script>
 
